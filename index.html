@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons8-argentina-32.png" type="image/x-icon">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <title>Navbar-Js</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="./index.html"><img src="https://pngimg.com/d/cobra_PNG37.png" alt="Logo" class="logo"></a>
+
+        <button class="abrir-menu" id="abrir">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <!-- Menú desplegable -->
+            <ul class="nav-list">
+                <li><a href="./pages/home.html">Home</a></li>
+
+                <li><a href="#">Catálogo</a></li>
+
+                <li><a href="./pages/login.html">Iniar Sesión</a></li>
+
+                <li><a href="./pages/register.html">Registrarse</a></li>
+                
+                <button class="cerrar-menu" id="cerrar">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo">Me Gusta el Aaarte</h1>
+        <h3>Todo tipo de arte</h3>
+        <!-- SHOPCONTENT -->
+        <div id="shopContent" class="shop-content">
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div id="modalContainer"></div>
+
+    <i id="carrito" class="fa-solid fa-cart-shopping"><span id="cantidadCarrito"></span></i>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/shop.js"></script>
+</body>
+
+</html>

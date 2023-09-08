@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/icons8-argentina-32.png" type="image/x-icon">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/account.css" />
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="../index.html"><img src="https://pngimg.com/d/cobra_PNG37.png" alt="Logo" class="logo"></a>
+
+        <button class="abrir-menu" id="abrir">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <!-- Menú desplegable -->
+            <ul class="nav-list">
+                <li><a href="./home.html">Home</a></li>
+                
+                <li><a href="../index.html">Catálogo</a></li>
+
+                <li><a href="./login.html">Iniciar Sesión</a></li>
+
+                <li><a href="./register.html">Registrarse</a></li>
+
+                <button class="cerrar-menu" id="cerrar">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sesion-main">
+        <form class="form__container" id="login--form" novalidate>
+            <p class="titulo">Iniciá Sesión</p>
+
+            <!-- Email -->
+            <div class="form__field">
+                <input type="email" placeholder="Email" class="form__input" id="email" autocomplete="off" />
+            </div>
+            <!-- Email -->
+
+            <!-- Contraseña -->
+            <div class="form__field">
+                <input type="password" placeholder="Password" class="form__input" id="password" autocomplete="off" />
+            </div>
+            <!-- Contraseña -->
+
+            <small id="form__error"></small>
+            <input type="submit" class="form__submit__btn" value="Iniciar Sesión" />
+            <p class="form--redirect">¿No tenés cuenta? <a class="link--gradient" href="./register.html">Registrate</a>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="../js/register.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

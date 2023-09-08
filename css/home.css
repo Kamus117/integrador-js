@@ -1,0 +1,75 @@
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1% 5%;
+    margin-bottom: 25px;
+    
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=3838&resolucion=2560x1440);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    height: 85vh;
+}
+
+.presentacion h2{
+    color: var(--color-A);;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-A);
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.beneficio b{
+    font-size: x-large;
+    font-weight: 900;
+
+}
+
+.beneficio p{
+    width: 300px;
+}
+
+.beneficio i{
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 768px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+@media (min-width:769px) and (max-width:900px) {
+    .presentacion{
+        height: 70vh;
+    }
+    .flex-container{
+        justify-content: space-around;
+        align-items: first baseline;
+
+    }
+    .beneficio i, .beneficio b{
+        font-size: xx-large;
+    }
+    .beneficio p{
+        width: 190px;
+        font-size: 1.5rem;
+    }
+}
+
