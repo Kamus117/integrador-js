@@ -31,7 +31,7 @@ main{
 .titulo{
     font-family: var(--titulos);
     font-size: 3.5rem;
-    color: var(--color-A);
+    color: red;
 }
 
 p{
