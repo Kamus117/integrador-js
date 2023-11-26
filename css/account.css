@@ -9,7 +9,8 @@
 }
 
 .-main{
-    height: 84vh;
+    height: auto;
+    padding: 60px 0;
 }
 
 .form__container{
@@ -115,9 +116,6 @@
 }
 @media (min-width: 768.1px) and (max-width: 900px){
 
-    .-main{
-        height: 87vh;
-    }
     .-main .titulo{
         margin-top: 20%;
     }

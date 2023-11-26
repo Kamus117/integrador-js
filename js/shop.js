@@ -56,6 +56,15 @@ const productos = [
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const mostrarMensajeCarrito = () => {
+    const mensajeCarrito = document.getElementById("mensaje-carrito");
+    mensajeCarrito.style.display = "block";
+};
+
+const ocultarMensajeCarrito = () => {
+    const mensajeCarrito = document.getElementById("mensaje-carrito");
+    mensajeCarrito.style.display = "none";
+};
 
 productos.forEach((product) => {
     let content = document.createElement("div");
@@ -91,11 +100,29 @@ productos.forEach((product) => {
             })
             carritoCounter()
             saveLocal()
+
+            // Mostrar el mensaje
+            mostrarMensajeCarrito();
+
+            // Ocultar el mensaje después de 1000 milisegundos (1 segundo)
+            setTimeout(() => {
+                ocultarMensajeCarrito();
+            }, 1000);
+    
         }
     })
 });
 const saveLocal = () => {
     localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+const hacerCompra =()=>{
+    carrito = [];
+    carritoCounter();
+    saveLocal();
+    pintarCarrito()
+    location.reload();
+    alert(`¡Gracias por su Compra!`)
 }
 
 const pintarCarrito = () => {
@@ -166,8 +193,11 @@ const pintarCarrito = () => {
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
     totalBuying.innerHTML = `
-    Total a pagar: $ ${total}
+    Pagar total: $ ${total}
     `;
+
+    totalBuying.addEventListener(`click`, hacerCompra)
+
     modalContainer.append(totalBuying);
 };
 

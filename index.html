@@ -2,14 +2,25 @@
 <html lang="es">
 
 <head>
+
+    <!-- SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Buenos Aires" />
+    <meta name="language" content="Español">
+    <meta name="author" content="Vanina">
+
+
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/icons8-argentina-32.png" type="image/x-icon">
+
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shop.css">
@@ -36,7 +47,7 @@
                 <li><a href="./pages/login.html">Iniciar Sesión</a></li>
 
                 <li><a href="./pages/register.html">Registrarse</a></li>
-                
+
                 <button class="cerrar-menu" id="cerrar">
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
@@ -51,8 +62,8 @@
         <div id="shopContent" class="shop-content">
 
         </div>
+        
     </main>
-
     <footer>
         <div class="social-icons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -60,12 +71,15 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
-
+    
     <div id="modalContainer"></div>
-
+    
     <i id="carrito" class="fa-solid fa-cart-shopping"><span id="cantidadCarrito"></span></i>
-
-
+    
+    <!-- Mensaje de nuevo producto -->
+    <div id="mensaje-carrito" style="display: none;">
+        <p>Se ha añadido el producto al carrito!</p>
+    </div>
     <script src="./js/main.js"></script>
     <script src="./js/shop.js"></script>
 </body>
